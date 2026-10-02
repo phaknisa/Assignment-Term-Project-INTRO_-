@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครเรียน - ขั้นตอนที่ 1 (ข้อมูลส่วนตัวและครอบครัว)</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="555.png" alt="KMUTNB Logo" class="logo-img">
+        <h1>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="register-step1.html" class="active">สมัครเรียน</a></li>
+            <li><a href="schedule.html">กำหนดการ</a></li>
+            <li><a href="contact.html">ติดต่อ</a></li>
+            <li><a href="login.html">เข้าสู่ระบบ</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-title-banner">สมัครเรียน</div>
+
+    <div class="main-container">
+        <div class="apply-container">
+            <!-- Indicator บอกขั้นตอน -->
+            <div class="step-indicator">
+                <div class="step-item active">1. ข้อมูลส่วนตัวและครอบครัว</div>
+                <div class="step-item">2. อัปโหลดไฟล์เอกสาร</div>
+            </div>
+
+            <p style="text-align: center; font-size: 0.9rem; color: #666; margin-bottom: 20px;">
+                ลงทะเบียนเพื่อสมัครเรียน (ข้อมูลที่กรอกต้องเป็นของผู้สมัครเข้าศึกษาเท่านั้น)
+            </p>
+
+            <form action="register-step2.html" method="GET">
+                <!-- ข้อมูลส่วนตัว -->
+                <div class="form-grid">
+                    <label for="fullname">ชื่อ-นามสกุล</label>
+                    <input type="text" id="fullname" class="form-control" required>
+
+                    <label for="idcard">เลขประจำตัวประชาชน</label>
+                    <input type="text" id="idcard" class="form-control" required>
+
+                    <label for="dob">วันเดือนปีเกิด</label>
+                    <input type="date" id="dob" class="form-control" required>
+
+                    <label for="phone">เบอร์โทรศัพท์มือถือ</label>
+                    <input type="tel" id="phone" class="form-control" required>
+
+                    <label for="address">ที่อยู่ปัจจุบัน</label>
+                    <input type="text" id="address" class="form-control" required>
+
+                    <label for="old-school">ชื่อสถานศึกษาเดิม</label>
+                    <input type="text" id="old-school" class="form-control">
+
+                    <label for="education-level">ระดับชั้นการศึกษา</label>
+                    <input type="text" id="education-level" class="form-control">
+
+                    <label for="gpa">เกรดเฉลี่ยสะสม (GPA)</label>
+                    <input type="text" id="gpa" class="form-control">
+
+                    <label for="email">อีเมล</label>
+                    <input type="email" id="email" class="form-control" required>
+
+                    <label for="password">รหัสผ่าน</label>
+                    <input type="password" id="password" class="form-control" required>
+
+                    <label for="confirm-password">ยืนยันรหัสผ่าน</label>
+                    <input type="password" id="confirm-password" class="form-control" required>
+                </div>
+
+                <!-- ข้อมูลครอบครัว -->
+                <div class="form-section-title">ข้อมูลครอบครัว</div>
+                <div class="form-grid">
+                    <label for="father-name">ชื่อ-นามสกุล(บิดา)</label>
+                    <input type="text" id="father-name" class="form-control">
+
+                    <label for="father-id">เลขประจำตัวประชาชน</label>
+                    <input type="text" id="father-id" class="form-control">
+
+                    <label for="father-phone">เบอร์โทรศัพท์มือถือ</label>
+                    <input type="tel" id="father-phone" class="form-control">
+
+                    <label for="father-address">ที่อยู่ปัจจุบัน</label>
+                    <input type="text" id="father-address" class="form-control">
+
+                    <label for="father-dob">วันเดือนปีเกิด</label>
+                    <input type="date" id="father-dob" class="form-control">
+
+                    <label for="mother-name">ชื่อ-นามสกุล(มารดา)</label>
+                    <input type="text" id="mother-name" class="form-control">
+
+                    <label for="mother-id">เลขประจำตัวประชาชน</label>
+                    <input type="text" id="mother-id" class="form-control">
+
+                    <label for="mother-phone">เบอร์โทรศัพท์มือถือ</label>
+                    <input type="tel" id="mother-phone" class="form-control">
+
+                    <label for="mother-address">ที่อยู่ปัจจุบัน</label>
+                    <input type="text" id="mother-address" class="form-control">
+
+                    <label for="mother-dob">วันเดือนปีเกิด</label>
+                    <input type="date" id="mother-dob" class="form-control">
+                </div>
+
+                <div class="btn-group" style="margin-top: 30px;">
+                    <button type="submit" class="btn btn-primary">ถัดไป (ขั้นตอนที่ 2) &raquo;</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>ติดต่อ</h4>
+                <p>..........<br>..........<br>..........</p>
+            </div>
+            <div class="footer-col">
+                <h4>ติดตามข่าวสาร</h4>
+                <p>..........<br>..........<br>..........</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

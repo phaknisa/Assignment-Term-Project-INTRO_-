@@ -1,0 +1,383 @@
+/* style.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Sarabun', 'Prompt', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #f37021;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Navbar */
+nav {
+    background-color: #e0e0e0;
+    border-bottom: 2px solid #ccc;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav a {
+    display: block;
+    padding: 12px 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+}
+
+nav a:hover, nav a.active {
+    background-color: #c8c8c8;
+    color: #000;
+}
+
+/* Page Banner */
+.page-title-banner {
+    background: linear-gradient(to bottom, #b8860b, #8b6508);
+    color: white;
+    padding: 18px 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Container */
+.main-container {
+    flex: 1;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Content Blocks */
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    background: #e8e8e8;
+}
+
+.hero-left {
+    flex: 1;
+    min-width: 280px;
+    background: linear-gradient(135deg, #2b1055, #7597de);
+    color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.badge-new {
+    background: #ff3333;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-box {
+    border: 3px solid #ffcc00;
+    border-radius: 12px;
+    padding: 15px 20px;
+    background: rgba(0,0,0,0.3);
+}
+
+.hero-right {
+    flex: 1.5;
+    min-width: 300px;
+}
+
+.hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Section Campus */
+.campus-section {
+    display: flex;
+    flex-wrap: wrap;
+    background: #333;
+    color: white;
+}
+
+.campus-left {
+    flex: 1;
+    min-width: 280px;
+    padding: 25px;
+}
+
+.campus-left h3 {
+    color: #ff7722;
+    margin-bottom: 12px;
+}
+
+.campus-left p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.campus-right {
+    flex: 1.5;
+    min-width: 300px;
+}
+
+.campus-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Forms (Login, Register, Apply) */
+.form-card {
+    background: #e0e0e0;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.form-card h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 1.3rem;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #444;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background: white;
+    font-size: 0.95rem;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #f37021;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 9px 20px;
+    border: 1px solid #888;
+    background: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background: #f37021;
+    color: white;
+    border-color: #d65c0d;
+}
+
+.btn-primary:hover {
+    background: #d65c0d;
+}
+
+.btn-secondary {
+    background: #e0e0e0;
+}
+
+/* Multistep Form */
+.apply-container {
+    padding: 30px 20px;
+}
+
+.step-indicator {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+
+.step-item {
+    padding: 8px 18px;
+    background: #eee;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #666;
+}
+
+.step-item.active {
+    background: #f37021;
+    color: white;
+}
+
+.form-section-title {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 20px 0 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f37021;
+    color: #333;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 12px 15px;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-grid label {
+    text-align: right;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .form-grid label {
+        text-align: left;
+    }
+}
+
+/* Schedule / Contact Specifics */
+.poster-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.poster-img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-info {
+    padding: 30px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.map-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    height: 350px;
+    width: 100%;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #f37021;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-col h4 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.footer-col p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #fff;
+}
